@@ -1,4 +1,3 @@
-// src/TodoList.js
 import React from "react";
 import { useTodos } from "./useTodos";
 
@@ -17,8 +16,8 @@ const TodoList = () => {
           </button>
           <button
             onClick={() => {
-              setEditTodo(eachTodo.id); // Set the todo to edit mode
-              setEditData({ [eachTodo.id]: eachTodo.value }); // Set the edit data in the form
+              setEditTodo(eachTodo.id); 
+              setEditData({ [eachTodo.id]: eachTodo.value }); 
             }}
           >
             Edit
