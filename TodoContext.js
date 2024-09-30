@@ -1,11 +1,8 @@
-// src/TodoContext.js
+
 import React, { createContext, useReducer, useState } from "react";
 import { TodoReducer, TODO_CONSTS } from "./TodoReducer";
-
-// Create a context
 export const TodoContext = createContext();
 
-// Create a provider component
 export const TodoProvider = ({ children }) => {
   const [todos, dispatchTodos] = useReducer(TodoReducer, []);
   const [editData, setEditData] = useState({});
