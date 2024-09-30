@@ -1,4 +1,4 @@
-// src/TodoForm.js
+
 import React, { useState, useEffect } from "react";
 import { useTodos } from "./useTodos";
 
@@ -10,7 +10,7 @@ const TodoForm = () => {
   // Whenever editData changes, update the input field
   useEffect(() => {
     if (Object.keys(editData).length > 0) {
-      setInputData(editData[Object.keys(editData)[0]]); // Set the input data to the edit value
+      setInputData(editData[Object.keys(editData)[0]]); 
     }
   }, [editData]);
 
@@ -24,8 +24,8 @@ const TodoForm = () => {
       // Update existing todo
       const todoId = Object.keys(editData)[0];
       editTodo(todoId, inputData);
-      setEditData({}); // Clear the edit data after update
-      setInputData(""); // Clear input field
+      setEditData({}); 
+      setInputData(""); 
     }
   };
 
